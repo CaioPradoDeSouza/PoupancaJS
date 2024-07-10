@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+#header{
+    height: 200px;
+    background-image: url("../imgs/noteEgrana.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+}
+
+#header h1{
+    width: 350px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(17, 17, 20, 0.911);
+    color: white;
+    font-size: 40px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+#main-content{
+    height: 200px;
+}
+
+#options{
+    max-width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.option{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.option h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgba(144, 144, 240, 0.582);
+    border-radius: 5px;
+}
+
+.option-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.option input{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option button{
+    width: 100px;
+    cursor: pointer;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+}
+
+.todos-valores{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-valor{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(127, 168, 255, 0.541);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.h3-saldo{
+    width: 100px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.938);
+    color: white;
+}
+
+.h3-valor{
+    background-color: rgba(42, 42, 250, 0.678);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.h3-valor-investido{
+    background-color: rgba(0, 0, 0, 0.938);
+    color: white;
+    width: 200px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valor-investido{
+    background-color: rgb(47, 255, 64);
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.valor-investido-frase{
+    background-color: rgb(2, 58, 2);
+    font-size: 18px;
+    width: 160px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}

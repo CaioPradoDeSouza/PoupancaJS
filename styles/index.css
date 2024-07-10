@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+}
+
+#cabeca{
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    margin: 10px;
+    background-color: rgba(102, 102, 204, 0.753);
+    border-radius: 5px;
+}
+
+.cabeca-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.cabeca-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%
+}
+
+.cabeca-h1{
+    width: 60%;
+    font-size: 45px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.img-cabeca{
+    display: flex;
+    
+    justify-content: center;
+    width: 50%;
+}
+
+.cabeca-img{
+    width: 270px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#main{
+    max-width: 100%;
+    margin: 10px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main-div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img{
+    width: 400px;
+    height: 270px;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.main-form{
+    width: 70%;
+    height: 80%;
+    background-color: rgba(98, 98, 233, 0.856);
+    border-radius: 5px;
+}
+
+.main-form h3{
+    font-size: 35px;
+    font-family: "Titillium Web", sans-serif;
+    
+}
+
+.main-form label{
+    font-size: 28px;
+}
+
+.main-form input{
+    height: 35px;
+    max-width: 150px;
+    font-size:18px;
+    border-radius: 5px;
+}
+
+.submit-button{
+    width: 70px;
+    cursor: pointer;
+}
