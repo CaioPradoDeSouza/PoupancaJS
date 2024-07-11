@@ -1,21 +1,38 @@
-function depositar(){
-    
-    let depositarInput = document.getElementById("valorDeposito").value;
-    let depositoSenha = document.getElementById("senhaTransacaoDeposito").value;
 
-    let todosValores = [];
-    
-    
-        if(depositarInput != 0 && depositoSenha == 1234567){
-            let valorDepositoFormatado = Intl.NumberFormat(undefined, {style: "currency", currency: "BRL",}).format(depositarInput);
-            document.querySelector(".h3-valor").innerHTML = valorDepositoFormatado;
-            let valorTotal = valorDepositoFormatado;
-            document.querySelector("#valorDeposito").value = "";
-            document.querySelector("#senhaTransacaoDeposito").value = "";
 
-            console.log(valorTotal);
+function realizarTransacao(){
+    let valor = document.querySelector("#value").value;
+    let senha = document.querySelector("#password").value;
+    let saldoEmConta = document.querySelector(".h3-valor");
+    let botaoDepositar = document.querySelector("#depositar");
+    let botaoSacar = document.querySelector("#sacar");
+    let botaoInvestir = document.querySelector("#investir");
+    let valorFormatado = Intl.NumberFormat(undefined, {style: "currency", currency: "BRL",}).format(valor);
+
+    botaoDepositar.addEventListener('click', ()=>{
+        if(valor != 0 && senha == 1){
+            document.querySelector(".h3-valor").innerHTML = valorFormatado;
+            document.querySelector("#value").value = "";
+            document.querySelector("#password").value = "";
         }
-        
+});
+
+    botaoSacar.addEventListener('click', ()=>{
+        if(valor <= saldoEmConta && senha == 1){
+            alert("sacou");
+            document.querySelector("#value").value = "";
+
+            document.querySelector("#password").value = "";
+    }
+})
+    
+    botaoInvestir.addEventListener('click', ()=>{
+        if(valor <= saldoEmConta && senha == 1){
+            alert("investiu");
+            document.querySelector("#value").value = "";
+            document.querySelector("#password").value = "";
+    }
+})
 }
 
 

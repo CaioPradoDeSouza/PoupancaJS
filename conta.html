@@ -11,34 +11,29 @@
         <h1>Olá Usuario !</h1>
     </header>
     <main id="main-content">
+
+        <div class="valor" id="newValue">
+            <input type="number" name="valor" class="inputNewValue" id="value" placeholder="digite o valor">
+        </div>
+        <div class="valor" id="newValue">
+            <input type="password" name="password" class="inputNewValue" id="password" placeholder="digite a senha">
+        </div>
         <div id="options">
             <div class="option">
-                <h3>Depositar</h3>
-                <div class="option-content">
-                    <input type="number" name="deposito" id="valorDeposito">
-                    <input type="password" name="senhaTransacao" id="senhaTransacaoDeposito"
-                    placeholder="senha de transação">
-                    <button id="depoButton" onclick="depositar()">Depositar</button>
-                </div>
+                <button onclick="realizarTransacao()" class="buttonTransaction" id="depositar">
+                    Depositar
+                </button>
             </div>
             <div class="option">
-                <h3>Sacar</h3>
-                <div class="option-content">
-                    <input type="number" name="saque" id="saque">
-                    <input type="password" name="senhaSaque" id="senhaSaque"
-                    placeholder="senha de transação">
-                    <button id="sacarButton" onclick="sacar()">sacar</button>
-                </div>
+                <button onclick="realizarTransacao()" class="buttonTransaction" id="sacar">
+                    Sacar
+                </button>
             </div>
             <div class="option">
-                <H3>Investir</H3>
-                <div class="option-content">
-                    <input type="number" name="investir" id="investir">
-                    <input type="password" name="senhaTransacao" id="senhaTransacao" 
-                    placeholder="senha de transação">
-                    <button>Investir</button>
-                </div>
-            </div>
+                <button onclick="realizarTransacao()" class="buttonTransaction" id="investir">
+                    Investir
+                </button>
+            </div>            
         </div>
     </main>
     <div class="values">
