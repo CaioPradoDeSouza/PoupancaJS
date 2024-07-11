@@ -15,19 +15,19 @@
             <div class="option">
                 <h3>Depositar</h3>
                 <div class="option-content">
-                    <input type="number" name="deposito" id="deposito">
-                    <input type="password" name="senhaTransacao" id="senhaTransacao"
+                    <input type="number" name="deposito" id="valorDeposito">
+                    <input type="password" name="senhaTransacao" id="senhaTransacaoDeposito"
                     placeholder="senha de transação">
-                    <button>Depositar</button>
+                    <button id="depoButton" onclick="depositar()">Depositar</button>
                 </div>
             </div>
             <div class="option">
                 <h3>Sacar</h3>
                 <div class="option-content">
                     <input type="number" name="saque" id="saque">
-                    <input type="password" name="senhaTransacao" id="senhaTransacao"
+                    <input type="password" name="senhaSaque" id="senhaSaque"
                     placeholder="senha de transação">
-                    <button>sacar</button>
+                    <button id="sacarButton" onclick="sacar()">sacar</button>
                 </div>
             </div>
             <div class="option">
@@ -45,7 +45,7 @@
         <div class="todos-valores">
             <div class="div-valor">
                     <h3 class="h3-saldo">Saldo</h3>
-                    <p class="h3-valor">R$100,00</p>
+                    <p class="h3-valor">R$ 0</p>
             </div>
             <div class="div-valor">
                 <h3 class="h3-valor-investido">Valor investido</h3>
@@ -54,5 +54,7 @@
             </div>
         </div>
     </div>
+
+    <script src="scripts/conta.js"></script>
 </body>
 </html>
